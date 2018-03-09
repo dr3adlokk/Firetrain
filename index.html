@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://use.fontawesome.com/bc19a41229.js"></script>
+    <title>Choo Choo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>Train Schedule</h1>
+                <p>Anytime is Train Time</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="panel-title" id="train-form">
+                    <h3>Add Train</h3>
+                </div>
+                <div class="panel panel-body" id="train-info">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="search">Train Name: </label>
+                            <br>
+                            <input type="text" class="form-line" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="search">Destination: </label>
+                            <br>
+                            <input type="text" class="form-line" id="destin">
+                        </div>
+                        <div class="form-group">
+                            <label for="search">First Train Time (HH:mm): </label>
+                            <br>
+                            <input type="text" class="form-line" id="firstTTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="search">Frequency (min): </label>
+                            <br>
+                            <input type="number" class="form-line" id="freq">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="submitBTN">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel-title" id="current-trains">
+                <h3>Current Train Schedule</h3>
+            </div>
+        </div>
+        <div class="row panel panel-body" id="namePanel">
+            <div class="col-md-3" id="tName">
+                <h4>Train Name</h4>
+            </div>
+            <div class="col-md-3" id="tDestination">
+                <h4>Destination</h4>
+            </div>
+            <div class="col-md-2" id="tFrequency">
+                <h4>Frequency (min)</h4>
+            </div>
+            <div class="col-md-2" id="tNextArrival">
+                <h4>Next Arrival</h4>
+            </div>
+            <div class="col-md-2" id="tMinAway">
+                <h4>Minutes Away</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <!-- MomentJS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="./assets/javascript/train.js"></script>
+</body>
+
+</html>

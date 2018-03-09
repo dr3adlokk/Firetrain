@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Abel', sans-serif;
+}
+
+.jumbotron {
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 80px;
+    background-image: url('../images/background3.gif');
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+    background-position: center;
+    color: rgb(216, 185, 191);
+}
+
+.jumbotron, h1, p {
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 2px 2px rgba(29, 26, 26, 0.938);
+}
+
+.form-line {
+    width: 100%;
+}
+
+.panel-title {
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+
+h3 {
+    line-height: 40px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.far {
+    padding: 2px;
+    display: inline-block;
+}
+
+#namePanel {
+    background-color: white;
+}
+
+hr {
+    background-color: rgb(88, 88, 88);
+    padding: 1px;
+}
